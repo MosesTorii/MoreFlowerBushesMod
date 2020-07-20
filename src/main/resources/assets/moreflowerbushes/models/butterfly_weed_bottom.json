@@ -1,0 +1,6 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "moreflowerbushes:block/butterfly_weed_bottom"
+  }
+}

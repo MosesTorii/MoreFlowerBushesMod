@@ -1,18 +1,19 @@
-package com.rallen.moreflowerbushes.common.blocks;
+package com.rallen.moreflowerbushes.common.holders;
 
-import com.rallen.moreflowerbushes.MoreFlowerBushes;
-import com.rallen.moreflowerbushes.common.items.MoreFlowerBushesItems;
+import com.rallen.moreflowerbushes.MoreFlowerBushesMod;
+import com.rallen.moreflowerbushes.common.blocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.registries.ObjectHolder;
 
-@Mod.EventBusSubscriber(modid = MoreFlowerBushes.MOD_ID, bus = Bus.MOD)
-@ObjectHolder(MoreFlowerBushes.MOD_ID)
+@Mod.EventBusSubscriber(modid = MoreFlowerBushesMod.MOD_ID, bus = Bus.MOD)
+@ObjectHolder(MoreFlowerBushesMod.MOD_ID)
 public class MoreFlowerBushesBlocks {
 
     public static final Block blue_sage_block = null;
@@ -39,36 +40,36 @@ public class MoreFlowerBushesBlocks {
     @SubscribeEvent
     public static void registerBlockItems(final RegistryEvent.Register<Item> event) {
         event.getRegistry().register(new BlockItem(blue_sage_block,
-                new Item.Properties().group(MoreFlowerBushesItems.MoreFlowerBushesItemGroup.Instance))
-                .setRegistryName("blue_sage_block"));
+                new Item.Properties().group(ItemGroup.DECORATIONS))
+                .setRegistryName(blue_sage_block.getRegistryName()));
 
         event.getRegistry().register(new BlockItem(butterfly_weed_block,
-                new Item.Properties().group(MoreFlowerBushesItems.MoreFlowerBushesItemGroup.Instance))
-                .setRegistryName("butterfly_weed_block"));
+                new Item.Properties().group(ItemGroup.DECORATIONS))
+                .setRegistryName(butterfly_weed_block.getRegistryName()));
 
         event.getRegistry().register(new BlockItem(fuchsia_block,
-                new Item.Properties().group(MoreFlowerBushesItems.MoreFlowerBushesItemGroup.Instance))
-                .setRegistryName("fuchsia_block"));
+                new Item.Properties().group(ItemGroup.DECORATIONS))
+                .setRegistryName(fuchsia_block.getRegistryName()));
 
         event.getRegistry().register(new BlockItem(golden_shower_block,
-                new Item.Properties().group(MoreFlowerBushesItems.MoreFlowerBushesItemGroup.Instance))
-                .setRegistryName("golden_shower_block"));
+                new Item.Properties().group(ItemGroup.DECORATIONS))
+                .setRegistryName(golden_shower_block.getRegistryName()));
 
         event.getRegistry().register(new BlockItem(hortensia_block,
-                new Item.Properties().group(MoreFlowerBushesItems.MoreFlowerBushesItemGroup.Instance))
-                .setRegistryName("hortensia_block"));
+                new Item.Properties().group(ItemGroup.DECORATIONS))
+                .setRegistryName(hortensia_block.getRegistryName()));
 
         event.getRegistry().register(new BlockItem(larkspur_block,
-                new Item.Properties().group(MoreFlowerBushesItems.MoreFlowerBushesItemGroup.Instance))
-                .setRegistryName("larkspur_block"));
+                new Item.Properties().group(ItemGroup.DECORATIONS))
+                .setRegistryName(larkspur_block.getRegistryName()));
 
         event.getRegistry().register(new BlockItem(mountain_laurel_block,
-                new Item.Properties().group(MoreFlowerBushesItems.MoreFlowerBushesItemGroup.Instance))
-                .setRegistryName("mountain_laurel_block"));
+                new Item.Properties().group(ItemGroup.DECORATIONS))
+                .setRegistryName(mountain_laurel_block.getRegistryName()));
 
         event.getRegistry().register(new BlockItem(purple_hibiscus_block,
-                new Item.Properties().group(MoreFlowerBushesItems.MoreFlowerBushesItemGroup.Instance))
-                .setRegistryName("purple_hibiscus_block"));
+                new Item.Properties().group(ItemGroup.DECORATIONS))
+                .setRegistryName(purple_hibiscus_block.getRegistryName()));
 
     }
 }
