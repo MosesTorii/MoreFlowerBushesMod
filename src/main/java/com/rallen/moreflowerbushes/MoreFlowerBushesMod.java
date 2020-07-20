@@ -1,5 +1,8 @@
 package com.rallen.moreflowerbushes;
 
+import com.rallen.moreflowerbushes.common.holders.MoreFlowerBushesBlocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -39,7 +42,14 @@ public class MoreFlowerBushesMod
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
-
+        RenderTypeLookup.setRenderLayer(MoreFlowerBushesBlocks.blue_sage_block, RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(MoreFlowerBushesBlocks.butterfly_weed_block, RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(MoreFlowerBushesBlocks.fuchsia_block, RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(MoreFlowerBushesBlocks.purple_hibiscus_block, RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(MoreFlowerBushesBlocks.mountain_laurel_block, RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(MoreFlowerBushesBlocks.larkspur_block, RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(MoreFlowerBushesBlocks.hortensia_block, RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(MoreFlowerBushesBlocks.golden_shower_block, RenderType.getCutout());
     }
 
 }
